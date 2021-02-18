@@ -1,8 +1,8 @@
 name: PR Build Test
-
 on:
-  pull_request:
-    types: [opened, edited, reopened]
+  check_run:
+    types: [created, rerequested, requested_action]
+
 
 jobs:
   build:
